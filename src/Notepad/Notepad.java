@@ -135,7 +135,7 @@ public class Notepad extends JFrame implements ActionListener {
         view.add(ft);view.add(fstyle);view.add(fsize);view.add(txtclr);view.add(bg);
 
 
-        JMenuItem j1= new JMenuItem("About Notepad");
+        JMenuItem j1= new JMenuItem("About");
         j1.addActionListener(this);
         j1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_H, ActionEvent.CTRL_MASK));
         about.add(j1);
@@ -281,7 +281,7 @@ public class Notepad extends JFrame implements ActionListener {
             t.setBackground(Color.WHITE);
 
         }
-        else if(a.getActionCommand().equals("About Notepad")){
+        else if(a.getActionCommand().equals("About")){
            new About().setVisible(true);
         }
     }
